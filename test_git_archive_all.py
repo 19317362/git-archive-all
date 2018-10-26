@@ -125,7 +125,7 @@ class Repo:
 
     def archive(self, path):
         a = GitArchiver(main_repo_abspath=self.path)
-        a.create(path)
+        a.create(path, compresslevel=3)
 
 
 base = {
